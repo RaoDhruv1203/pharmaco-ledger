@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -45,13 +44,33 @@ const medicineFormSchema = z.object({
 
 type MedicineFormValues = z.infer<typeof medicineFormSchema>;
 
-// Mock data for medicine suggestions (replace with actual data later)
+// Updated mock data for medicine suggestions with popular Indian medicine brands
 const medicineSuggestions = [
-  "Paracetamol",
-  "Amoxicillin",
-  "Ibuprofen",
-  "Aspirin",
-  "Cetirizine",
+  "Crocin Advance",
+  "Dolo 650",
+  "Combiflam",
+  "Allegra 120mg",
+  "Saridon",
+  "Vicks Action 500",
+  "Azithral 500",
+  "Limcee 500mg",
+  "Becosules",
+  "Metacin",
+  "Sinarest",
+  "Digene",
+  "Meftal Spas",
+  "Pan 40",
+  "Montair LC",
+  "Thyronorm",
+  "Nurokind Plus",
+  "Cipcal 500",
+  "Shelcal 500",
+  "Evion 400",
+  "B-Complex",
+  "Zincovit",
+  "Ecosprin",
+  "Aciloc 150",
+  "Cetrizine"
 ];
 
 const AddMedicine = () => {
